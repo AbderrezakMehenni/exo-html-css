@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto','sans-serif';
+    font-size: 14px;
+}
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    height: 40px;
+    width: 100%;
+} 
+ul.navbar li {
+    float: right;
+}  
+ul.navbar li.title {
+    float: left;
+    font-size: 30px;
+    line-height:15px;
+    margin-left:10px;
+	margin-right:10px;
+	text-transform:uppercase;
+	vertical-align: top;
+}  
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+ul.navbar li a:hover {
+    color: gray;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    clear: both;
+    box-shadow: 5px 5px 5px black;
+} 
+footer p {
+    margin: 0;
+  }  
+.footer-section {
+    margin-bottom: 20px;
+} 
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}  
+.footer-section ul li {
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer a {
+    color: lightslategray;
+}
+.contact {
+    text-align: right;
+    float: right;
+    margin-top: -5%;
+}
+.container {
+    overflow: hidden;
+}
+.left-div{
+    width: 70%;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+}
+.right-div {
+    width: 30%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    padding-top: 5%;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 5%;
+}
+.annexe {
+    color: black;
+}
+.plus {
+    color: red;
+}
+.img {
+    height: 30%;
+    box-sizing: border-box;
+    float: left;
+}
+.text {
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 5%;
+}
