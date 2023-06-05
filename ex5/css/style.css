@@ -64,6 +64,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    color: purple;
 }
 footer a {
     color: lightslategray;
@@ -98,6 +99,26 @@ footer a {
 }
 .plus {
     color: red;
+}
+.plus:hover {
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .img {
     height: 30%;
@@ -150,5 +171,27 @@ footer a {
     transform: translateX(0);
   }
 }
-
+.address {
+    transition: font-size 1s ease;
+}
+.address:hover {
+    font-size: 1.2em;
+}
+@keyframes changeColor {
+    0% {
+        color: blue;
+    }
+    33% {
+        color: white;
+    }
+    66% {
+        color: red;
+    }
+    100% {
+        color: blue;
+    }
+}
+.partner {
+    animation: changeColor 5s infinite;
+}
 
