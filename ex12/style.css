@@ -1,0 +1,45 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.block {
+    width: 200px;
+    height: 400px;
+    margin-right: 10px;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e6f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s;
+    border-radius: 10%;
+}
+.back {
+    transform: rotateY(180deg);
+    background-color: #ffcdd2;
+    backface-visibility: hidden;
+}
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+  
+.card:hover .back {
+    transform: rotateY(0);
+}
